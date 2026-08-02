@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-risk-low: #22c55e;
+  --color-risk-medium: #f59e0b;
+  --color-risk-high: #ef4444;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}

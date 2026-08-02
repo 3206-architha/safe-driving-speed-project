@@ -1,0 +1,98 @@
+{
+  "best_model": "gradient_boosting",
+  "trained_at": "2026-08-02T11:02:15.874518+00:00",
+  "dataset_size": 20000,
+  "feature_columns": [
+    "temperature",
+    "humidity",
+    "rainfall",
+    "visibility",
+    "wind_speed",
+    "road_condition_code",
+    "traffic_density_code",
+    "current_speed",
+    "hour_of_day"
+  ],
+  "all_models": [
+    {
+      "model_name": "decision_tree",
+      "mae": 2.734,
+      "rmse": 3.457,
+      "r2": 0.9745,
+      "cv_r2_mean": 0.9742,
+      "cv_r2_std": 0.0009,
+      "train_time_seconds": 0.08,
+      "feature_importance": {
+        "temperature": 0.0007,
+        "humidity": 0.0006,
+        "rainfall": 0.0005,
+        "visibility": 0.2615,
+        "wind_speed": 0.0026,
+        "road_condition_code": 0.6846,
+        "traffic_density_code": 0.0483,
+        "current_speed": 0.0007,
+        "hour_of_day": 0.0005
+      }
+    },
+    {
+      "model_name": "random_forest",
+      "mae": 2.535,
+      "rmse": 3.18,
+      "r2": 0.9785,
+      "cv_r2_mean": 0.9793,
+      "cv_r2_std": 0.0005,
+      "train_time_seconds": 9.95,
+      "feature_importance": {
+        "temperature": 0.0019,
+        "humidity": 0.0019,
+        "rainfall": 0.0014,
+        "visibility": 0.2618,
+        "wind_speed": 0.004,
+        "road_condition_code": 0.6782,
+        "traffic_density_code": 0.0475,
+        "current_speed": 0.0019,
+        "hour_of_day": 0.0014
+      }
+    },
+    {
+      "model_name": "gradient_boosting",
+      "mae": 2.467,
+      "rmse": 3.09,
+      "r2": 0.9797,
+      "cv_r2_mean": 0.9803,
+      "cv_r2_std": 0.0004,
+      "train_time_seconds": 6.68,
+      "feature_importance": {
+        "temperature": 0.0001,
+        "humidity": 0.0002,
+        "rainfall": 0.0002,
+        "visibility": 0.269,
+        "wind_speed": 0.0022,
+        "road_condition_code": 0.6791,
+        "traffic_density_code": 0.049,
+        "current_speed": 0.0001,
+        "hour_of_day": 0.0001
+      }
+    },
+    {
+      "model_name": "xgboost",
+      "mae": 2.495,
+      "rmse": 3.13,
+      "r2": 0.9791,
+      "cv_r2_mean": 0.9799,
+      "cv_r2_std": 0.0006,
+      "train_time_seconds": 0.64,
+      "feature_importance": {
+        "temperature": 0.0004,
+        "humidity": 0.0004,
+        "rainfall": 0.0094,
+        "visibility": 0.0872,
+        "wind_speed": 0.001,
+        "road_condition_code": 0.8692,
+        "traffic_density_code": 0.0316,
+        "current_speed": 0.0005,
+        "hour_of_day": 0.0004
+      }
+    }
+  ]
+}

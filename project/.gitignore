@@ -1,0 +1,16 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Node
+node_modules/
+dist/
+
+# OS
+.DS_Store
+
+# Data (keep pre-trained artifacts, ignore regenerated raw data if too large)
+ml_model/data/*.csv
+!ml_model/data/driving_conditions.csv
