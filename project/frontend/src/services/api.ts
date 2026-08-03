@@ -3,7 +3,7 @@ import type {
   AuthResponse, Prediction, PredictionRequest,
 } from '../types';
 
-const api = axios.create({ baseURL: '/api' });
+const api = axios.create({ baseURL: 'https://safe-driving-speed-project.onrender.com/api' });;
 
 // Attach the JWT to every request automatically once logged in
 api.interceptors.request.use((config) => {
